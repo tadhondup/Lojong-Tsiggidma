@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <app-definition type="SAB" program-version="8.4">
-  <project-name>བློ་སྦྱོང་ཚིག་བརྒྱད་མ།</project-name>
+  <project-name>ལག་ལེན་སོ་བདུན་མ།</project-name>
   <project-description></project-description>
 
-  <app-name lang="default">བློ་སྦྱོང་ཚིག་བརྒྱད་མ།</app-name>
-  <apk-filename append-version="true">Lojong-testing.apk</apk-filename>
-  <package>lojong.org</package>
+  <app-name lang="default">ལག་ལེན་སོ་བདུན་མ།</app-name>
+  <apk-filename append-version="true">laglensodunma.org.apk</apk-filename>
+  <package>laglensodunma.org</package>
   <version code="1" name="1.0"/>
   <multiple-apks value="false"/>
   <android-sdk min="14"/>
@@ -112,10 +112,10 @@
     <feature name="backgrounds-resize" value="true"/>
     <feature name="backgrounds-resize-width" value="1080"/>
     <feature name="scripture-refs-display" value="popup"/>
-    <feature name="show-chapter-number-on-app-bar" value="false"/>
-    <feature name="show-chapter-selector" value="false"/>
-    <feature name="show-chapter-selector-after-book" value="false"/>
-    <feature name="show-verse-selector" value="false"/>
+    <feature name="show-chapter-number-on-app-bar" value="true"/>
+    <feature name="show-chapter-selector" value="true"/>
+    <feature name="show-chapter-selector-after-book" value="true"/>
+    <feature name="show-verse-selector" value="true"/>
     <feature name="hide-empty-verses" value="true"/>
     <feature name="hide-empty-chapters" value="true"/>
     <feature name="footnote-caller-type" value="default"/>
@@ -200,7 +200,6 @@
 
   <traits>
     <trait name="has-verse-numbers" value="true"/>
-    <trait name="has-multiple-books" value="true"/>
   </traits>
 
   <markers>
@@ -210,8 +209,8 @@
   </colors>
 
   <books id="C01">
-    <book-collection-name>lojong testing</book-collection-name>
-    <book-collection-abbrev>lojong</book-collection-abbrev>
+    <book-collection-name>Gyalsi laglensodunma</book-collection-name>
+    <book-collection-abbrev>laglensodunma</book-collection-abbrev>
 
     <features type="bc">
       <feature name="show-scripture-refs" value="true"/>
@@ -233,10 +232,59 @@
     </features>
 
     <metadata>
-      <meta name="copyright-text" content="wnf. 2021"/>
-      <meta name="copyright-audio" content="wnf. 2021"/>
-      <meta name="copyright-images" content=""/>
+      <meta name="copyright-text" content="ནང་བསྟན་དཔེ་ཚོགས་ལྟེ་གནས།. 2021"/>
+      <meta name="copyright-audio" content="ནང་བསྟན་དཔེ་ཚོགས་ལྟེ་གནས།. 2021"/>
+      <meta name="copyright-images" content="ནང་བསྟན་དཔེ་ཚོགས་ལྟེ་གནས།. 2021"/>
     </metadata>
+
+    <styles-info>
+      <text-font family="font1"/>
+      <text-size value="20"/>
+      <line-height value="120"/>
+      <text-direction value="LTR"/>
+      <numeral-system value="Tibetan"/>
+
+      <styles>
+        <style name="div.footer">
+        </style>
+      </styles>
+    </styles-info>
+
+    <book id="B001">
+      <name>རྒྱལ་སྲས་ལག་ལེན་སོ་བདུན་མ།</name>
+      <abbrev>ལག་ལེན་སོ་བདུན་མ།</abbrev>
+      <filename>Root.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\Root\Root.txt</source>
+
+      <features type="book">
+        <feature name="show-chapter-numbers" value="inherit"/>
+        <feature name="lock-orientation" value="none"/>
+      </features>
+    </book>
+  </books>
+
+  <books id="C02">
+    <book-collection-name>རིན་པོ་ཆེའི་གསུང་།</book-collection-name>
+    <book-collection-abbrev>རིན་པོ་ཆེ།</book-collection-abbrev>
+
+    <features type="bc">
+      <feature name="show-scripture-refs" value="true"/>
+      <feature name="layout-show-config-button" value="true"/>
+      <feature name="ref-chapter-verse-separator" value=":"/>
+      <feature name="ref-verse-range-separator" value="-"/>
+      <feature name="ref-verse-list-separator" value=","/>
+      <feature name="ref-chapter-range-separator" value="-"/>
+      <feature name="ref-chapter-list-separator" value=";"/>
+      <feature name="numerals-type" value="default"/>
+      <feature name="bc-allow-single-pane" value="true"/>
+      <feature name="bc-allow-copy-text" value="true"/>
+      <feature name="bc-allow-long-press-select" value="true"/>
+      <feature name="bc-allow-share-text" value="true"/>
+      <feature name="bc-allow-text-on-image" value="true"/>
+      <feature name="bc-allow-verse-of-the-day" value="true"/>
+      <feature name="bc-allow-share-audio" value="false"/>
+      <feature name="bc-allow-share-video" value="false"/>
+    </features>
 
     <styles-info>
       <text-font family="font1"/>
@@ -252,46 +300,353 @@
     </styles-info>
 
     <book id="B001">
-      <name>བློ་སྦྱོང་ཚིག་བརྒྱད་མ།</name>
-      <abbrev>བློ་སྦྱོང་།</abbrev>
-      <filename>root-bo.txt</filename>
-      <source>D:\Scripture App Builder\Lojong - for testing\root-bo.txt</source>
+      <name>རིན་པོ་ཆེའི་གསུང་།</name>
+      <abbrev>རིན་པོ་ཆེ།</abbrev>
+      <filename>rinpoche.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\commentaries\rinpoche.txt</source>
 
       <features type="book">
         <feature name="show-chapter-numbers" value="inherit"/>
         <feature name="lock-orientation" value="none"/>
       </features>
     </book>
+  </books>
 
-    <book id="B002">
-      <name>བོད་ཡིག</name>
-      <abbrev>བོད་ཡིག</abbrev>
-      <filename>Tibetan.commentary.txt</filename>
-      <source>D:\Scripture App Builder\Lojong - for testing\commentaries\Tibetan.commentary.txt</source>
+  <books id="C03">
+    <book-collection-name>Thubten Chodrag</book-collection-name>
+    <book-collection-abbrev>Thubcho</book-collection-abbrev>
+
+    <features type="bc">
+      <feature name="show-scripture-refs" value="true"/>
+      <feature name="layout-show-config-button" value="true"/>
+      <feature name="ref-chapter-verse-separator" value=":"/>
+      <feature name="ref-verse-range-separator" value="-"/>
+      <feature name="ref-verse-list-separator" value=","/>
+      <feature name="ref-chapter-range-separator" value="-"/>
+      <feature name="ref-chapter-list-separator" value=";"/>
+      <feature name="numerals-type" value="default"/>
+      <feature name="bc-allow-single-pane" value="true"/>
+      <feature name="bc-allow-copy-text" value="true"/>
+      <feature name="bc-allow-long-press-select" value="true"/>
+      <feature name="bc-allow-share-text" value="true"/>
+      <feature name="bc-allow-text-on-image" value="true"/>
+      <feature name="bc-allow-verse-of-the-day" value="true"/>
+      <feature name="bc-allow-share-audio" value="false"/>
+      <feature name="bc-allow-share-video" value="false"/>
+    </features>
+
+    <styles-info>
+      <text-font family="font1"/>
+      <text-size value="20"/>
+      <line-height value="120"/>
+      <text-direction value="LTR"/>
+      <numeral-system value="Default"/>
+
+      <styles>
+        <style name="div.footer">
+        </style>
+      </styles>
+    </styles-info>
+
+    <book id="B001">
+      <name>ཐུབ་བསྟན་ཆོས་གྲགས།</name>
+      <abbrev>ཐུབ་ཆོས།</abbrev>
+      <filename>thubcho.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\commentaries\thubcho.txt</source>
 
       <features type="book">
         <feature name="show-chapter-numbers" value="inherit"/>
         <feature name="lock-orientation" value="none"/>
       </features>
     </book>
+  </books>
 
-    <book id="B003">
-      <name>English</name>
-      <abbrev>En</abbrev>
-      <filename>English.txt</filename>
-      <source>D:\Scripture App Builder\Lojong - for testing\commentaries\English.txt</source>
+  <books id="C04">
+    <book-collection-name>Jigme Phuntsok</book-collection-name>
+    <book-collection-abbrev>Jigphun</book-collection-abbrev>
+
+    <features type="bc">
+      <feature name="show-scripture-refs" value="true"/>
+      <feature name="layout-show-config-button" value="true"/>
+      <feature name="ref-chapter-verse-separator" value=":"/>
+      <feature name="ref-verse-range-separator" value="-"/>
+      <feature name="ref-verse-list-separator" value=","/>
+      <feature name="ref-chapter-range-separator" value="-"/>
+      <feature name="ref-chapter-list-separator" value=";"/>
+      <feature name="numerals-type" value="default"/>
+      <feature name="bc-allow-single-pane" value="true"/>
+      <feature name="bc-allow-copy-text" value="true"/>
+      <feature name="bc-allow-long-press-select" value="true"/>
+      <feature name="bc-allow-share-text" value="true"/>
+      <feature name="bc-allow-text-on-image" value="true"/>
+      <feature name="bc-allow-verse-of-the-day" value="true"/>
+      <feature name="bc-allow-share-audio" value="false"/>
+      <feature name="bc-allow-share-video" value="false"/>
+    </features>
+
+    <styles-info>
+      <text-font family="font1"/>
+      <text-size value="20"/>
+      <line-height value="120"/>
+      <text-direction value="LTR"/>
+      <numeral-system value="Default"/>
+
+      <styles>
+        <style name="div.footer">
+        </style>
+      </styles>
+    </styles-info>
+
+    <book id="B001">
+      <name>འཇིགས་མེད་ཕུན་ཚོགས།</name>
+      <abbrev>འཇིགས་ཕུན།</abbrev>
+      <filename>jigpun.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\commentaries\jigpun.txt</source>
 
       <features type="book">
         <feature name="show-chapter-numbers" value="inherit"/>
         <feature name="lock-orientation" value="none"/>
       </features>
     </book>
+  </books>
 
-    <book id="B004">
-      <name>中文</name>
-      <abbrev>中文</abbrev>
-      <filename>中文.txt</filename>
-      <source>D:\Scripture App Builder\Lojong - for testing\commentaries\中文.txt</source>
+  <books id="C05">
+    <book-collection-name>Jigme Tsultrim</book-collection-name>
+    <book-collection-abbrev>Jigme</book-collection-abbrev>
+
+    <features type="bc">
+      <feature name="show-scripture-refs" value="true"/>
+      <feature name="layout-show-config-button" value="true"/>
+      <feature name="ref-chapter-verse-separator" value=":"/>
+      <feature name="ref-verse-range-separator" value="-"/>
+      <feature name="ref-verse-list-separator" value=","/>
+      <feature name="ref-chapter-range-separator" value="-"/>
+      <feature name="ref-chapter-list-separator" value=";"/>
+      <feature name="numerals-type" value="default"/>
+      <feature name="bc-allow-single-pane" value="true"/>
+      <feature name="bc-allow-copy-text" value="true"/>
+      <feature name="bc-allow-long-press-select" value="true"/>
+      <feature name="bc-allow-share-text" value="true"/>
+      <feature name="bc-allow-text-on-image" value="true"/>
+      <feature name="bc-allow-verse-of-the-day" value="true"/>
+      <feature name="bc-allow-share-audio" value="false"/>
+      <feature name="bc-allow-share-video" value="false"/>
+    </features>
+
+    <styles-info>
+      <text-font family="font1"/>
+      <text-size value="20"/>
+      <line-height value="120"/>
+      <text-direction value="LTR"/>
+      <numeral-system value="Default"/>
+
+      <styles>
+        <style name="div.footer">
+        </style>
+      </styles>
+    </styles-info>
+
+    <book id="B001">
+      <name>འཇིགས་མེད་ཚུལ་ཁྲིམས།</name>
+      <abbrev>འཇིགས་མེད།</abbrev>
+      <filename>jigme.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\commentaries\jigme.txt</source>
+
+      <features type="book">
+        <feature name="show-chapter-numbers" value="inherit"/>
+        <feature name="lock-orientation" value="none"/>
+      </features>
+    </book>
+  </books>
+
+  <books id="C06">
+    <book-collection-name>Khangar Rinpoche</book-collection-name>
+    <book-collection-abbrev>Khangsar</book-collection-abbrev>
+
+    <features type="bc">
+      <feature name="show-scripture-refs" value="true"/>
+      <feature name="layout-show-config-button" value="true"/>
+      <feature name="ref-chapter-verse-separator" value=":"/>
+      <feature name="ref-verse-range-separator" value="-"/>
+      <feature name="ref-verse-list-separator" value=","/>
+      <feature name="ref-chapter-range-separator" value="-"/>
+      <feature name="ref-chapter-list-separator" value=";"/>
+      <feature name="numerals-type" value="default"/>
+      <feature name="bc-allow-single-pane" value="true"/>
+      <feature name="bc-allow-copy-text" value="true"/>
+      <feature name="bc-allow-long-press-select" value="true"/>
+      <feature name="bc-allow-share-text" value="true"/>
+      <feature name="bc-allow-text-on-image" value="true"/>
+      <feature name="bc-allow-verse-of-the-day" value="true"/>
+      <feature name="bc-allow-share-audio" value="false"/>
+      <feature name="bc-allow-share-video" value="false"/>
+    </features>
+
+    <styles-info>
+      <text-font family="font1"/>
+      <text-size value="20"/>
+      <line-height value="120"/>
+      <text-direction value="LTR"/>
+      <numeral-system value="Default"/>
+
+      <styles>
+        <style name="div.footer">
+        </style>
+      </styles>
+    </styles-info>
+
+    <book id="B001">
+      <name>བསྟན་པའི་དབང་ཕྱུག</name>
+      <abbrev>ཁང་སར་རིན་པོ་ཆེ།</abbrev>
+      <filename>kangsar.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\commentaries\kangsar.txt</source>
+
+      <features type="book">
+        <feature name="show-chapter-numbers" value="inherit"/>
+        <feature name="lock-orientation" value="none"/>
+      </features>
+    </book>
+  </books>
+
+  <books id="C07">
+    <book-collection-name>Sangay Nyinpa</book-collection-name>
+    <book-collection-abbrev>Sangay Nyinpa</book-collection-abbrev>
+
+    <features type="bc">
+      <feature name="show-scripture-refs" value="true"/>
+      <feature name="layout-show-config-button" value="true"/>
+      <feature name="ref-chapter-verse-separator" value=":"/>
+      <feature name="ref-verse-range-separator" value="-"/>
+      <feature name="ref-verse-list-separator" value=","/>
+      <feature name="ref-chapter-range-separator" value="-"/>
+      <feature name="ref-chapter-list-separator" value=";"/>
+      <feature name="numerals-type" value="default"/>
+      <feature name="bc-allow-single-pane" value="true"/>
+      <feature name="bc-allow-copy-text" value="true"/>
+      <feature name="bc-allow-long-press-select" value="true"/>
+      <feature name="bc-allow-share-text" value="true"/>
+      <feature name="bc-allow-text-on-image" value="true"/>
+      <feature name="bc-allow-verse-of-the-day" value="true"/>
+      <feature name="bc-allow-share-audio" value="false"/>
+      <feature name="bc-allow-share-video" value="false"/>
+    </features>
+
+    <styles-info>
+      <text-font family="font1"/>
+      <text-size value="20"/>
+      <line-height value="120"/>
+      <text-direction value="LTR"/>
+      <numeral-system value="Default"/>
+
+      <styles>
+        <style name="div.footer">
+        </style>
+      </styles>
+    </styles-info>
+
+    <book id="B001">
+      <name>སངས་རྒྱས་མཉེན་པ།</name>
+      <abbrev>སངས་རྒྱས་མཉེན་པ།</abbrev>
+      <filename>nyenpa.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\commentaries\nyenpa.txt</source>
+
+      <features type="book">
+        <feature name="show-chapter-numbers" value="inherit"/>
+        <feature name="lock-orientation" value="none"/>
+      </features>
+    </book>
+  </books>
+
+  <books id="C08">
+    <book-collection-name>Thragu rinpoche</book-collection-name>
+    <book-collection-abbrev>Thragu</book-collection-abbrev>
+
+    <features type="bc">
+      <feature name="show-scripture-refs" value="true"/>
+      <feature name="layout-show-config-button" value="true"/>
+      <feature name="ref-chapter-verse-separator" value=":"/>
+      <feature name="ref-verse-range-separator" value="-"/>
+      <feature name="ref-verse-list-separator" value=","/>
+      <feature name="ref-chapter-range-separator" value="-"/>
+      <feature name="ref-chapter-list-separator" value=";"/>
+      <feature name="numerals-type" value="default"/>
+      <feature name="bc-allow-single-pane" value="true"/>
+      <feature name="bc-allow-copy-text" value="true"/>
+      <feature name="bc-allow-long-press-select" value="true"/>
+      <feature name="bc-allow-share-text" value="true"/>
+      <feature name="bc-allow-text-on-image" value="true"/>
+      <feature name="bc-allow-verse-of-the-day" value="true"/>
+      <feature name="bc-allow-share-audio" value="false"/>
+      <feature name="bc-allow-share-video" value="false"/>
+    </features>
+
+    <styles-info>
+      <text-font family="font1"/>
+      <text-size value="20"/>
+      <line-height value="120"/>
+      <text-direction value="LTR"/>
+      <numeral-system value="Default"/>
+
+      <styles>
+        <style name="div.footer">
+        </style>
+      </styles>
+    </styles-info>
+
+    <book id="B001">
+      <name>ཁྲ་འགུ་རིན་པོ་ཆེ།</name>
+      <abbrev>ཁྲ་འགུ་རིན་པོ་ཆེ།</abbrev>
+      <filename>thragu.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\commentaries\thragu.txt</source>
+
+      <features type="book">
+        <feature name="show-chapter-numbers" value="inherit"/>
+        <feature name="lock-orientation" value="none"/>
+      </features>
+    </book>
+  </books>
+
+  <books id="C09">
+    <book-collection-name>Jigme Wangyal</book-collection-name>
+    <book-collection-abbrev>Wangyal</book-collection-abbrev>
+
+    <features type="bc">
+      <feature name="show-scripture-refs" value="true"/>
+      <feature name="layout-show-config-button" value="true"/>
+      <feature name="ref-chapter-verse-separator" value=":"/>
+      <feature name="ref-verse-range-separator" value="-"/>
+      <feature name="ref-verse-list-separator" value=","/>
+      <feature name="ref-chapter-range-separator" value="-"/>
+      <feature name="ref-chapter-list-separator" value=";"/>
+      <feature name="numerals-type" value="default"/>
+      <feature name="bc-allow-single-pane" value="true"/>
+      <feature name="bc-allow-copy-text" value="true"/>
+      <feature name="bc-allow-long-press-select" value="true"/>
+      <feature name="bc-allow-share-text" value="true"/>
+      <feature name="bc-allow-text-on-image" value="true"/>
+      <feature name="bc-allow-verse-of-the-day" value="true"/>
+      <feature name="bc-allow-share-audio" value="false"/>
+      <feature name="bc-allow-share-video" value="false"/>
+    </features>
+
+    <styles-info>
+      <text-font family="font1"/>
+      <text-size value="20"/>
+      <line-height value="120"/>
+      <text-direction value="LTR"/>
+      <numeral-system value="Default"/>
+
+      <styles>
+        <style name="div.footer">
+        </style>
+      </styles>
+    </styles-info>
+
+    <book id="B001">
+      <name>འཇིགས་མེད་དབང་རྒྱལ།</name>
+      <abbrev>བེ་རི་འཇིགས་མེད།</abbrev>
+      <filename>wanggyal.txt</filename>
+      <source>D:\Scripture App Builder\Laklen-sodunma for app\commentaries\wanggyal.txt</source>
 
       <features type="book">
         <feature name="show-chapter-numbers" value="inherit"/>
@@ -312,6 +667,7 @@
     </layout>
     <layout mode="two" enabled="true">
       <layout-collection id="C01"/>
+      <layout-collection id="C02"/>
 
       <features type="layout">
         <feature name="link" value="true"/>
@@ -321,6 +677,7 @@
     </layout>
     <layout mode="verse-by-verse" enabled="true">
       <layout-collection id="C01"/>
+      <layout-collection id="C02"/>
     </layout>
   </layouts>
 
@@ -332,7 +689,7 @@
       <feature name="require-internet" value="false"/>
       <feature name="calc-code" value=""/>
     </features>
-    <pin>WFEfgqRMmFM=</pin>
+    <pin>4rYwCAMPiwc=</pin>
   </security>
 
   <interface-languages>
@@ -3655,16 +4012,12 @@
     <image width="512" height="512">drawable-web\ic_launcher.png</image>
   </images>
 
-  <images type="drawer">
-    <image width="480" height="217">drawable-mdpi\nav_drawer.png</image>
-  </images>
-
   <adaptive-icon>
-    <foreground inset="30.50%">
+    <foreground inset="26%">
       <image>ic_launcher_foreground.png</image>
     </foreground>
     <background>
-      <color value="#fdffe9"/>
+      <color value="#FFFFFF"/>
     </background>
   </adaptive-icon>
 </app-definition>
